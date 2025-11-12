@@ -1,0 +1,124 @@
+/* --- Global Styles --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2c3e50; /* Dark header */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    flex-grow: 1; /* Pushes footer to the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Card Styling --- */
+.download-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px; /* Max width for a clean card look */
+    padding: 30px;
+    text-align: center;
+}
+
+.game-media img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.game-details h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.game-details p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* --- Button Styling --- */
+.download-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons on small screens */
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+/* Windows Button Colors */
+.windows-btn {
+    background-color: #0078d4; /* Microsoft Blue */
+}
+
+.windows-btn:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* Android Button Colors */
+.android-btn {
+    background-color: #3DDC84; /* Android Green */
+    color: #1a1a1a;
+}
+
+.android-btn:hover {
+    background-color: #24b969;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-top: 1px solid #ddd;
+}
+
+/* --- Responsiveness for wider screens --- */
+@media (min-width: 600px) {
+    .download-buttons {
+        flex-direction: row; /* Place buttons side-by-side on large screens */
+    }
+}
